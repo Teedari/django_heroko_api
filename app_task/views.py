@@ -10,6 +10,9 @@ class TodoListApi(generics.ListCreateAPIView):
   serializer_class = TodoSerializer
   permission_classes = (permissions.AllowAny,)
 
+
+
+
 class TodoDetailApi(generics.RetrieveDestroyAPIView):
   queryset = Todo.objects.all()
   serializer_class = TodoSerializer
